@@ -1,0 +1,10 @@
+////////////Impotent commands for ubantu..///
+
+/////to restart the xampp server ///////
+
+sudo /opt/lampp/lampp restart
+
+///////import databse in mysql////////////////////
+
+sudo ./mysql -u root  latest_marketing < oodles_marketing09876_latest.sql
+

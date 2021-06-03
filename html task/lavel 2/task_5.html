@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <style>
+      .main_div {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .cenet_div {
+        height: 90vh;
+        width: 80vw;
+        background-color: rgb(126, 219, 126);
+      }
+      h1 {
+        text-align: center;
+      }
+      .drag {
+        width: 200px;
+        height: 200px;
+        background: #000;
+      }
+    </style>
+
+    <title>Task 1</title>
+  </head>
+  <body>
+    <h1>
+      10.Make a page including all HTML APIs such as Geolocation API,Map,Drag
+      and Drop API,etc
+    </h1>
+    <div class="main_div">
+      <div class="cenet_div">
+        <h1>Geolocation API Get Latitude & Longitude</h1>
+        <button onclick="getLocation()">Click</button>
+
+        <p id="demo"></p>
+        <h1>Drag and drop API</h1>
+        <div
+          id="drag"
+          class="drag"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <img
+          src="https://s3.amazonaws.com/oodles-technologies1/profile-images/8a1f99c9-5671-4112-b28e-0a0588fa678e.jpeg"
+          alt="img"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="img"
+        />
+
+        <h1>this data is stored on localstarage</h1>
+
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script>
+      // Check browser support
+      if (typeof Storage !== "undefined") {
+        // Store
+        localStorage.setItem("lastname", "Prem Singh it is store on local");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem(
+          "lastname"
+        );
+      } else {
+        document.getElementById("result").innerHTML =
+          "Sorry, your browser does not support Web Storage...";
+      }
+      // for geilocation
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+
+      // for drag and drop
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+        console.log(ev.target.id);
+        console.log(ev.dataTransfer.setData);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      .colore_enter {
+        width: 250px;
+        height: 250px;
+        border: 2px solid yellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">
+        2.Write a code including all jQuery Event Methods
+      </h1>
+      <a class="btn btn-info" id="click">Click Event change BG-color</a
+      ><br /><br />
+
+      <p class="element">on dblclick this element show and hide</p>
+
+      <a class="btn btn-info" id="dblclick"
+        >dblclick Event hide and show element</a
+      >
+      <br /><br />
+      <div class="colore_enter">MouseEnter & Leave will fill color</div>
+      <br /><br />
+
+      <input type="text" placeholder="Focuse & Blur Event" />
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#click").click(function () {
+          $("#click").css("background-color", "red");
+        });
+
+        $("#dblclick").dblclick(function () {
+          $(".element").toggle();
+        });
+        $(".colore_enter").mouseenter(function () {
+          $(".colore_enter").css("background-color", "red");
+        });
+        $(".colore_enter").mouseleave(function () {
+          $(".colore_enter").css("background-color", "blue");
+        });
+
+        $("input").focus(function () {
+          $("input").css("background-color", "red");
+        });
+        $("input").blur(function () {
+          $("input").css("background-color", "green");
+        });
+      });
+    </script>
+  </body>
+</html>

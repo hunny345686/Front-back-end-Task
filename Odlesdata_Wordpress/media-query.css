@@ -1,0 +1,110 @@
+/* Media query for mobile responsive screens by Prashant Dave Start */
+
+/* Common Media query for all devices Start*/
+
+@media only screen and (max-width: 600px) 
+{
+    
+  }
+
+/* Common Media query for all devices End*/
+
+/* Smartphones (portrait) ----------- Start */
+@media only screen and (max-width : 320px) 
+{
+   
+}
+/* Smartphones (portrait) ----------- End */
+
+/* Medium devices (landscape tablets, 768px and up) Start*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+   
+    
+}
+/* Media Queries For general Vivo V15 ,Realme Start */
+@media only screen and (min-device-width : 360px) and (max-device-width :780px) 
+{
+   
+
+}
+  /* Media Queries For general Vivo V15 ,Realme End */
+
+
+/* Medium devices (landscape tablets, 768px and up) End */
+
+
+/* Apple iPhone 11 Pro Media Queries Start */
+
+/* Only for iPhone 11 Pro Media Queries Start */
+@media only screen and (min-width: 375px) and (max-width:812px)
+    {
+    
+     }
+
+/* Only for iPhone 11 Pro Media Queries End */
+
+     
+/*iPhone 11,iPhone 11 Pro Max, Media Queries Start */
+@media only screen and (min-width:414px) and (max-width:896px)
+    {
+    
+     }
+/* iPhone 11,iPhone 11 Pro Max,Media Queries End */
+
+
+
+/* Apple iPhone 11 Pro Media Queries Start */
+
+
+
+
+/* For general iPad layouts Start */
+@media only screen and (device-width: 768px)
+ {
+    
+ }
+
+/* For general iPad layouts End */
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+    /* Media query for 100% screen satio Start */
+@media only screen and (min-width: 1200px) 
+{
+    
+}
+    /* Media query for 100% screen satio End */
+
+    /* Media query for 90% screen satio Start */
+@media screen and (min-width: 1400px)
+ {
+    
+  }
+    /* Media query for 90% screen satio End */
+
+    /* Media query for 75-80% screen satio Start */
+  @media screen and (min-width: 1600px)
+   {
+    
+  }
+
+  /* Media query for 75-80% screen satio End */
+
+
+  /* Media query for 67% screen satio Start */
+  @media screen and (min-width: 1900px)
+   {
+    
+  }
+  /* Media query for 67% screen satio End */
+
+
+
+
+
+
+/* Media query for mobile responsive screens by Prashant Dave End */

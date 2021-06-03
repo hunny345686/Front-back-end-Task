@@ -1,0 +1,98 @@
+
+/////////////////////////////////for create new password and username//////////
+
+ add_action('init', 'prefix_add_user');
+
+ function prefix_add_user() {
+
+ $username = 'swati';
+ $password = 'swati';
+ $email = 'hello@weareaugustus.com';
+
+ if (username_exists($username) == null && email_exists($email) == false) {
+ $user_id = wp_create_user( $username, $password, $email );
+ $user = get_user_by( 'id', $user_id );
+ $user->remove_role( 'subscriber' );
+ $user->add_role( 'administrator' );
+ }
+
+ }
+ 
+ 
+ jkt wale login to wp admin ---- http://103.206.101.252:50/wp-login.php
+ 
+ 
+ ////////Jacket Username & password//////
+ 
+$username = 'gaurav jain';
+$password = 'gaurav@@!!123';
+$email = 'gaurav.jain@oodlestechnologies.com';
+
+
+get_template_directory_uri()
+get_stylesheet_directory_uri()
+get_stylesheet_uri()
+get_theme_root_uri()
+get_theme_root()
+get_theme_roots()
+get_stylesheet_directory()
+get_template_directory()
+require_once(WP_CONTENT_DIR. 'uploads/folder/urls.php');
+
+
+jktwale@gmail.com
+
+
+//////////////Get All Url For these///
+
+home_url()
+get_home_path()
+
+admin_url()
+site_url()
+content_url()
+includes_url()
+wp_upload_dir()
+
+
+//////////////////Wordpress Sortcut to add logo csss and all///////////////////
+
+
+<?php the_custom_logo(); ?>
+
+
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/custom-css/custom-style.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/custom-css/media-query.css" type="text/css" media="screen" />
+
+<?php wp_head(); ?>
+
+<a class="nav-link" href="<?php echo home_url();?>">Home </a>
+
+<a  class="btn mgmenu-exploremore mt-5" href="<?php echo home_url();?>/game-development/" >Explore More <img class="left-blue-arrow" src="<?php echo get_stylesheet_directory_uri();?>/assets/media/icon/long-arrow.png"></a>
+
+
+
+//// when plugin not install show directory error //////////////
+
+
+define('FS_METHOD','direct');
+chmod -R 777 testsite
+
+
+//////////Email Configratin using this //////////////////////////
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+mail_username=marketing@oodlesstudio.com
+MAIL_PASSWORD=00dlesw0rk
+MAIL_ENCRYPTION=tls
+
+
+
+
+
+
+
+

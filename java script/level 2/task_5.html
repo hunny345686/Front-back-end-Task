@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .Main_div {
+        height: 500px;
+        width: 100%;
+        background: rgb(245, 245, 174);
+        display: grid;
+        place-items: center;
+      }
+      .inner_div #a {
+        width: 15%;
+        padding: 5px;
+      }
+      .inner_div #b {
+        width: 15%;
+        padding: 5px;
+      }
+      #oprend {
+        width: 15%;
+        padding: 5px;
+      }
+      #result {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">
+      9.Make a page and perform all possible airthmetic operations in js on a
+      particular event
+    </h1>
+    <div class="Main_div">
+      <div class="inner_div">
+        <input type="number" id="a" />
+        <select id="mySelect">
+          <option value="add">+</option>
+          <option value="subs">-</option>
+          <option value="mult">*</option>
+          <option value="div">/</option>
+        </select>
+        <input type="number" id="b" />
+        <button class="btn btn-sm btn-info" id="click">CliCk</button>
+        <p id="result">result</p>
+      </div>
+    </div>
+
+    <script>
+      var btn = document.getElementById("click");
+      var result = document.getElementById("result");
+
+      const add = (a, b) => {
+        return a + b;
+      };
+      const subs = (a, b) => {
+        return a - b;
+      };
+      const mult = (a, b) => {
+        return a * b;
+      };
+      const div = (a, b) => {
+        return a / b;
+      };
+
+      const getresult = (oprend_1, oprend_2, opretor) => {
+        //console.log(oprend_1 + oprend_2 + opretor);
+        console.log(typeof opretor);
+        if (opretor === "add") {
+          return add(oprend_1, oprend_2);
+        } else if (opretor === "subs") {
+          return subs(oprend_1, oprend_2);
+        } else if (opretor === "mult") {
+          return mult(oprend_1, oprend_2);
+        } else {
+          return div(oprend_1, oprend_2);
+        }
+      };
+
+      btn.addEventListener("click", () => {
+        var oprend_1 = document.getElementById("a").value;
+        var oprend_2 = document.querySelector("#b").value;
+        var opretor = document.getElementById("mySelect").value;
+        oprend_1.to;
+        document.getElementById("result").innerHTML = getresult(
+          oprend_1,
+          oprend_2,
+          opretor
+        );
+      });
+    </script>
+  </body>
+</html>

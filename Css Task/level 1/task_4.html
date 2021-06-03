@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .Square {
+        width: 200px;
+        height: 250px;
+        background: yellow;
+        margin: auto;
+        transition: all 4s;
+      }
+      .Square:hover {
+        width: 400px;
+        height: 500px;
+        background: red;
+      }
+      .trabnform {
+        width: 200px;
+        height: 250px;
+        background: red;
+        margin: auto;
+        transition: all 2s linear;
+      }
+
+      .trabnform:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(-390deg);
+      }
+      .heart {
+        background-color: red;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        transform: rotate(-45deg);
+        animation: example 4s infinite;
+      }
+
+      @keyframes example {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+
+      .heart:before,
+      .heart:after {
+        content: "";
+        background-color: green;
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+      }
+
+      .heart:before {
+        top: -15px;
+        left: 0;
+      }
+
+      .heart:after {
+        left: 15px;
+        top: 0;
+      }
+    </style>
+
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="main_div">
+      <h1 class="text-center">
+        Make a block apply and all transition/transform effect
+      </h1>
+      <div class="Square"></div>
+      <br />
+      <div class="trabnform"></div>
+      <br />
+      <div class="heart"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

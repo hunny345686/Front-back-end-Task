@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  
+
+    <style>
+      h2{
+        color: rgb(74, 190, 7);
+      }
+      h3{
+        background: rgba(255, 99, 71, 1);
+        color: rgba(255, 255, 255)
+      }
+      h4{
+        color: #ff4c2a  ;
+      }
+      p{
+        font-size: 30px;
+        color: hsl(0, 100%, 30%);
+      }
+      .linear_gradient{
+        width: 300px;
+        height: 200px;
+        background-image: linear-gradient(red,yellow ,green,black);
+      }
+      .linear{
+        width: 300px;
+        height: 200px;
+        background-image: linear-gradient(to right, green , red);
+        display: grid;
+        place-items: center;
+        
+      }
+
+      .data{
+        width: 300px;
+        height: 200px;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+
+     .radial{
+      width: 300px;
+        height: 200px;
+        background-image: radial-gradient(red, yellow, green);
+     }
+
+     .circle{
+       width: 300px;
+       height: 300px;
+       background-image: radial-gradient(circle,green, blue, red);
+     }
+    </style>
+  
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="main_div container bg-light">
+      <h1 class="text-center">
+        3.Make a block or element and use all CSS Color like RGB,RGBA,HEX,HSL,gradient,etc.</h1>
+
+        <h2>Used color RGB(red, Green , blue)</h2>
+        <h3>Used color RGBA(red, green, blue, alpha)</h3>
+        <h4>used color for hexadecimal  (#ff4c2a)</h4>
+        <p>used color for HSL(hue, saturation, lightness) hsl(0, 100%, 50%)</p>
+
+        <h1>linear-gradient Example</h1>
+         <div class="d-inline">
+          <div class="linear_gradient">
+
+          </div>   
+          <div class="linear">
+            <h4>linear-gradient(to right, green , red)</h4>
+          </div>   
+
+          <div class="data">
+            <h4 class="text-white">background-image: repeating-linear-gradient(red, yellow 10%, green 20%);</h4>
+          </div>
+         </div>
+
+          <h1>Radial Gradients Example</h1>
+
+          <div class="radial">
+              <h4> background-image: radial-gradient(red, yellow, green);</h4>
+          </div>
+
+          <div class="circle">
+            <h4>background-image: radial-gradient(circle, red, yellow, green);</h4>
+        </div>
+          
+          
+    </div>
+  </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

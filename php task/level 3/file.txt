@@ -1,0 +1,1 @@
+this data show using php readfile function Syntex:-  echo readfile("file_name")

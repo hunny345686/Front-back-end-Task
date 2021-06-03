@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      p {
+        font-size: 30px;
+        color: blue;
+        background: #000;
+      }
+      .wh {
+        width: 200px;
+        height: 150px;
+        background: green;
+        color: white;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">
+        7.Write a jQuery code to perform jQuery-Dimensions ?
+      </h1>
+      <br />
+      <h2>jQuery Dimension Methods</h2>
+      <ul>
+        <li>height()</li>
+        <li>innerWidth() if u will use padding and margin then use it</li>
+        <li>innerHeight() if u will use padding and margin then use it</li>
+        <li>outerWidth() if u will use padding and margin then use it</li>
+        <li>outerHeight() if u will use padding and margin then use it</li>
+        <li>width()</li>
+      </ul>
+
+      <p>To get width and height of div</p>
+      <div class="wh"></div>
+      <br />
+      <button id="wh">Get width and height</button>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#wh").click(function () {
+          var width = $(".wh").width();
+          var height = $(".wh").height();
+
+          var outerWidth = $(".wh").outerWidth();
+          var outerHeight = $(".wh").outerHeight();
+          $(".wh").html(`widhth ${width} height ${height} <br>`);
+          // $(".wh").html(
+          //   `outerWidth ${outerWidth} outerHeight ${outerHeight} <br>`
+          // );
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .Main_div {
+        height: 500px;
+        width: 100%;
+        background: rgb(245, 245, 174);
+        display: grid;
+        place-items: center;
+      }
+      .inner_div #a {
+        width: 15%;
+        padding: 5px;
+      }
+      .inner_div #b {
+        width: 15%;
+        padding: 5px;
+      }
+      #oprend {
+        width: 15%;
+        padding: 5px;
+      }
+      #result {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">
+      10.Use all type of Js classes,function,variables,constants,etc and also
+      try to make reusable
+    </h1>
+    <div class="container">
+      <h1 class="text-center">Class Example</h1>
+      <p id="class"></p>
+
+      <h1 class="text-center">Function Example</h1>
+      <p id="fuction"></p>
+
+      <h1 class="text-center">variables & constants Example</h1>
+      <p>We have 3 ways to declare a variable</p>
+      <p>var,let and const ,( const we use for constent values like PI ) </p>
+      <p> Var Example:- var variable_name = data (whatever you want to store in this variable in this we have fuction scope with in fuction test(){}) </p>
+      <p> let Example:- let variable_name = data (whatever you want to store in this variable. in let and const we have block scope like within {}) </p>
+      <p> const Example:- const variable_name = data (whatever you want to store in this variable but this value will be constent) </p>
+      <p id="var_const"></p>
+    </div>
+
+      <script>
+        class friut {
+          constructor(name, howMany) {
+            this.name = name;
+            this.howMany = howMany;
+          }
+        }
+
+        var obj = new friut("apple", "10");
+        document.getElementById(
+          "class"
+        ).innerHTML = `${obj.name} is good for health. We have ${obj.howMany} ${obj.name}...
+        
+        class friut {
+          constructor(name, howMany) {
+            this.name = name;
+            this.howMany = howMany;
+          }
+        }
+
+        var obj = new friut("apple", "10");`;
+
+
+        function sum(a,b){
+          return a+ b;
+        }
+       var res =  sum(3,5);
+        document.getElementById(
+          "fuction"
+        ).innerHTML = `Result of this fuction is.....  
+        function sum(a,b){
+          return a+ b;
+        }
+       var res =  sum(3,5)....${res}`
+
+       var data = "test"
+       var data = "test"
+
+      </script>
+    </div>
+  </body>
+</html>

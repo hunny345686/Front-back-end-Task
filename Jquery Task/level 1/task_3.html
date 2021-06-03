@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      .colore_enter {
+        width: 250px;
+        height: 250px;
+        border: 2px solid yellow;
+        font-weight: bold;
+      }
+      #animatin {
+        color: red;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">3.Write a code to perform all jQuery Effects</h1>
+
+      <h2>jQuery hide() & show() Effect</h2>
+      <br /><br />
+
+      <p id="hideShow">this element is going to hide and show</p>
+      <button class="btn btn-info" id="hide">Hide</button>
+      <button class="btn btn-info" id="show">Show</button> <br /><br />
+
+      <h2>jQuery Fading Effects</h2>
+      <br /><br />
+      <p id="fedding">this element is going to fade in and out on click</p>
+      <button class="btn btn-info" id="fade">Fade Toggle</button>
+
+      <h2>jQuery Sliding Effects</h2>
+      <br />
+      <button class="btn btn-info" id="slide">Slide Up/Down Toggle</button>
+      <div class="slide">
+        <p id="para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio atque
+          commodi, nihil repudiandae tempora illo alias temporibus sit molestiae
+          neque reiciendis beatae maxime esse voluptatem qui quo nulla quidem
+          officia.
+        </p>
+      </div>
+      <br />
+
+      <h2>jQuery Animation Effects</h2>
+      <p id="animatin">This is jQuery Animation Effects</p>
+      <button class="btn btn-info" id="animation">Start animation</button
+      ><br /><br />
+
+      <h2>jQuery Method Chaining</h2>
+      <button class="btn btn-info" id="chane">Method Chaning</button>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("#hideShow").hide(2000);
+        });
+        $("#show").click(function () {
+          $("#hideShow").show(2000);
+        });
+        $("#fade").click(function () {
+          $("#fedding").fadeToggle(3000);
+        });
+        $("#slide").click(function () {
+          $("#para").slideToggle(1000);
+        });
+        $("#animation").click(function () {
+          let animation1 = $("#animatin");
+          animation1.animate({ color: "blue" }, 1000);
+          animation1.animate({ fontSize: "25px", color: "blue" }, 1000);
+        });
+        $("#chane").click(function () {
+          $("h2").css("color", "red").slideToggle(2000).fadeToggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>

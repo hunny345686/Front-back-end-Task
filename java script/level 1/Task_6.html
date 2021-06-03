@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Task 3</title>
+    <style>
+      .Main_div {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(194, 243, 138);
+        display: flex;
+        justify-content: center;
+      }
+
+      .inner_div {
+        width: 40vw;
+      }
+      .form_vid input {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Main_div">
+      <div class="inner_div mt-3">
+        <h1 class="text-center">Contact Form</h1>
+        <form action="" class="form-group">
+          <div class="form_vid form-control">
+            <label for="Name">Name:-</label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div class="form_vid form-control">
+            <label for="email">Email:-</label>
+            <input type="text" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="form_vid form-control">
+            <label for="phone">Phone No:-</label>
+            <input type="text" name="phone" id="phone" placeholder="Phone" />
+          </div>
+          <div class="form_vid form-control">
+            <label for="passsword">Password:-</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form_vid form-control">
+            <label for="c_password">Confirm Password:-</label>
+            <input
+              type="text"
+              name="c_password"
+              id="c_password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="form_vid form-control" id="option" name="option">
+            <label for="c_password">Profetion:-</label>
+            <select class="form-control">
+              <option value="chosse_one">Choose One</option>
+              <option value="web_developr">Web Developr</option>
+              <option value="front_end_dev">From-End Developer</option>
+              <option value="web_developr">Web Developr</option>
+              <option value="front_end_dev">From-End Developer</option>
+            </select>
+          </div>
+
+          <div class="form_vid form-control" id="option" name="option">
+            <label for="c_password">Skill:-</label> <br />
+            <input
+              type="checkbox"
+              class="skill"
+              name="skill_1"
+              value="Full stack"
+            />
+            <label for="vehicle1"> Full Stack Developr</label><br />
+            <input
+              type="checkbox"
+              class="skill"
+              name="skill_2"
+              value="Mern stack"
+            />
+            <label for="vehicle2"> Mern Stack</label><br />
+            <input
+              type="checkbox"
+              class="skill"
+              name="skill_3"
+              value="Mean stack"
+            />
+            <label for="vehicle3"> Mean Stack</label><br />
+          </div>
+
+          <div class="form_vid form-control" id="option" name="option">
+            <label for="c_password">Gender:-</label> <br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+          <button class="btn btn-info" onclick="form_submit(e)">Save</button>
+          <button class="btn btn-danger" onclick="reset()">Cencel</button>
+        </form>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="./main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <scrip
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></scrip>
+    <scrip
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></scrip>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+http://103.206.101.252:70/--- Sanitary Staging 
+
+https://marketing2.oodleslab.com/ ----Marketing Staging 
+
+Marketing Staging Branch - master
+Marketing Staging Branch - NewStaging
+
+
+http://103.206.101.252:50/ ------- JKTwale Staging 
+
+
+Skype
+sername - prem.singh@oodles.io
+password- Prem@@123
+
+
+github.com
+username- ipremsingh
+password- PremSingh@@123
+
+my.oodles.io
+username- prem.singh
+password- Prem@@123
+
+oodles_marketing wp-admin username and password
+
+usernam- prem
+password- PNoxKIB5%3vyX@L0$LqB1@jH
+
+Oodles Marketing	
+URL	https://www.oodlesmarketing.com/wp-login.php
+User Name	Marketing
+Password	ZpOUM%zQ.!kwS/FK
+
+gitlab.oodleslab.com
+prem.singh
+Prem@@123
+
+Atles 
+Username- eDB
+password- NLcIQqUa5jNdcQ4i
+
+connection link -mongodb+srv://eDB:<password>@cluster0.f80y6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+udemi 
+
+hunny345686@gmail.com
+Prem@@123
+
+
+gauravjaindm
+gauravjain
+
+App Time Sheet
+Username - prem.singh@oodles.io
+password- Prem@@123
+
+
+sudo vim hosts
+
+/// Some tips of Css will help u autometically mobile responsive/////////////
+
+m-auto // it will be in center of the parent div.
+d-flex
+w-100
+ml-auto
+mr-auto
+mt-1
+mb-2
+text-center
+
+Responsive Media size = 320 t0 567
+
+CGCPA Gitlab ------------------------
+
+Link - https://gitlab.oodleslab.com/oodles/CJCPA-Web.git
+
+usename - prashantdaveoodles
+password- jaiho123
+
+CJCPA Worpress username an password-----------------
+username: CJCPA
+password: YUq!p4SoJUOeaWXMRc
+Link- http://103.206.101.252:30/wp-login.php?redirect_to=http%3A%2F%2F103.206.101.252%3A30%2Fwp-admin%2F&reauth=1
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

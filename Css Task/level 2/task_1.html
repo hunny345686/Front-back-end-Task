@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      intagrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .main_div {
+        width: 100%;
+        height: auto;
+        background: rgb(221, 214, 218);
+      }
+      h2 {
+        color: red;
+      }
+
+      #h1_tag {
+        background-color: blue;
+      }
+      .h1_tag {
+        text-shadow: 1px 2px red;
+      }
+
+      a {
+        font-size: 35px;
+      }
+      a:link {
+        color: blue;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: red;
+      }
+
+      a:active {
+        color: yellow;
+      }
+
+      .p_tag p:first-child {
+        font-size: 25px;
+        color: red;
+      }
+      .p_tag p:last-child {
+        font-size: 25px;
+        color: blue;
+      }
+      .p_tag p:nth-child(2) {
+        font-size: 25px;
+        color: green;
+      }
+      .secondnddiv h1::first-line{
+        color: aqua;
+      }
+      .secondnddiv h2::first-letter{
+        color: aqua;
+      }
+      b {
+        font-size: 35px;
+        color: yellowgreen;
+        
+      }
+      b::before{
+        content: "hello before content";
+        color: red;
+      
+      }
+      b::before{
+        content: "hello before content";
+        color: red;
+      
+      }
+      .secondnddiv b::after{
+          content: "bye for aftre content";
+          color: blueviolet;
+          text-shadow: 2px 1px yellow;
+      }
+      h3::selection {
+        color: red;
+        background: yellow;
+         }
+    </style>
+    <title>Task 1</title>
+  </head>
+  <body>
+    <h1 class="text-center">
+      1.Make element or block and apply different-different types of CSS
+      Selectors such as Simple selectors,Combinator selectors,Pseudo-class
+      selectors ,Pseudo-elements selectors,Attribute selectors,etc
+    </h1>
+    <div class="main_div container">
+      <h2>css element selector H2 { }</h2>
+      <h1 id="h1_tag">css id selctor #id_name{}</h1>
+      <h1 class="h1_tag">css class selector .class_name{}</h1>
+      <h1>
+        group/reference css selector used like:- .class_name #id_name p { }
+      </h1>
+      <h1>
+        group/reference css selector used like:- p .class_name #id_name { }
+      </h1>
+      <h1>
+        group/reference css selector used like:- #id_name .class_name p { }
+      </h1>
+      <a href="#"
+        > Pseudo-classes a:link{}, a:visited,{} a:hover{}, a:active{}</a
+      >
+      <div class="p_tag">
+        <p>p_tag first child element p:first-child{}</p>
+        <p>p_tag seconed child element p:nth-child(n) .p_tag p:nth-child(2)</p>
+        <p>p_tag last child element p:last-child{}</p>
+      </div>
+    </div>
+
+    <div class="main_div secondnddiv container">
+      <h1> CSS first-line Pseudo-elements <br> ex- h1::first-line{}</h1>
+      <h2> CSS first-letter Pseudo-elements ex- h2::first-letter{}</h2>
+      <b>  CSS  before Pseudo-element ex b::before{}</b><br>
+      <b>  CSS  after Pseudo-element ex b::after{}</b>
+          <h3>css selection Pseudo-element ex- h3::selection </h3>  
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      intagrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      intagrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      intagrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

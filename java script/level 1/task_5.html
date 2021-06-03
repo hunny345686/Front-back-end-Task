@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .main_did {
+        height: 800px;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+      }
+    </style>
+    <title>Task 1</title>
+  </head>
+  <body>
+    <h1 class="text-center">
+      On Js events change the behaviour or layout of the particular block
+    </h1>
+    <div class="main_did" id="data">
+      <p id="p_teg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempore
+        dolores ullam iste libero recusandae facilis excepturi nisi consequuntur
+        beatae veniam sit a consectetur? Cumque labore magnam ipsam quasi
+        officiis.
+      </p>
+      <h2 id="hedding">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea eaque,
+        minus similique
+      </h2>
+      <button class="btn btn-warning" id="btn_click">Click Me</button>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script>
+      var main_div = document.getElementById("data");
+      var btn = document.getElementById("btn_click");
+      var p_teg = document.getElementById("p_teg");
+      var hedding = document.getElementById("hedding");
+
+      btn.addEventListener("click", function () {
+        main_div.style.border = "2px black solid";
+        main_div.style.background = "black";
+        main_div.style.color = "white";
+      });
+
+      btn.addEventListener("dblclick", function () {
+        p_teg.style.fontSize = "25px";
+      });
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

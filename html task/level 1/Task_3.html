@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .form_div {
+        background-color: azure;
+      }
+
+      .main {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    </style>
+    <title>Task 3</title>
+  </head>
+  <body>
+
+    <div class="form_div">
+      <h1 class="text-center">Make all Types of Form including all type input</h1>
+      <form
+        action="#"
+        method="GET"
+        enctype="multipart/form-data"
+        class="form-group"
+      >
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <label for="Name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Name"
+              class="form-control"
+            />
+
+            <label for="Email">Email</label>
+            <input
+              type="Email"
+              name="Email"
+              id="Email"
+              required
+              placeholder="Email"
+              class="form-control"
+            />
+
+            <label for="dob">DOB</label>
+            <input
+              type="date"
+              name="DOB"
+              id="DOB"
+              required
+              placeholder="DOB"
+              class="form-control"
+            /><br />
+            <label for="Gender">Gender</label>
+            <input type="radio" name="gender" /> : Male
+            <input type="radio" name="gender" /> : FeMale
+            <input type="radio" name="gender" /> : Other
+            <br />
+            <label for="profession">Professional</label>
+            <select class="form-control">
+              <option value="">Choose One</option>
+              <option value="One">One</option>
+              <option value="two">Two</option>
+              <option value="three">three</option>
+              <option value="four">four</option></select
+            ><br />
+            <label for="Hobbies">Hobbies</label><br />
+            playing
+            <input type="checkbox" id="play" name="hobies" value="playing" />
+            Travling
+            <input type="checkbox" id="play" name="hobies" />
+            Watching
+            <input type="checkbox" id="play" name="hobies" />
+            <br />
+            <br />
+            <label for="Hobbies">Age</label>
+
+            <input type="number" id="age" name="age" class="form-control" /> <br>
+
+            <label for="Hobbies">Photo</label>
+
+            <input type="file" id="photo" name="photo" class="form-control" /> <br>
+
+            <button class="btn btn-info">Save</button>
+            <button class="btn btn-danger">Cencel</button>
+          </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="main">
+       <input type="button" value="Click"> <p>type="button"</p>
+        <input type="checkbox" value="chekbox"><p>type="checkbox"</p>
+        <input type="color"> <p>type="color"</p>
+        <input type="date"> <p>type="date"</p>
+        <input type="datetime-local"><p>type="datetime-local</p>
+        <input type="email"><p>type= email</p>
+        <input type="file"><p>type=file</p>
+        <input type="hidden"><p>type=hidden</p>
+        <input type="image"><p>type=<image/p>
+        <input type="month"><p>type=month</p>
+        <input type="number"><p>type=number</p>
+        <input type="password"><p>type=password</p>
+        <input type="radio"><p>type=radio</p>
+        <input type="range"><p>type=range</p>
+        <input type="reset"><p>type=reset</p>
+        <input type="search"><p>type=search</p>
+        <input type="submit"><p>type=submit</p>
+        <input type="tel"><p>type=tel<tel/p>
+        <input type="text"><p>type=text</p>
+        <input type="time"><p>type=time</p>
+        <input type="url"><p>type=url</p>
+        <input type="week"><p>type=week</p>
+
+        <h1>The readonly Attribute</h1> 
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <h1>The size Attribute</h1>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <h1>The maxlength Attribute</h1>
+    <input type="text" id="pin" name="pin" maxlength="4" >
+
+    <h1>The min and max Attributes
+    </h1>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+  </div>
+
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
