@@ -1,3 +1,10 @@
-https://www.hackerrank.com/ ----- for prectice code 
+https://www.hackerrank.com/ ----- for prectice code
 
 https://www.freecodecamp.org/news/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f/------most-popular-coding-challenge-websites
+
+
+
+to Make faster website --------------`
+get cdn from telwing websiet
+link - https://tailblocks.cc/
+2link - https://betterprogramming.pub/10-open-source-libraries-for-tailwind-css-components-fdbcb692afa9

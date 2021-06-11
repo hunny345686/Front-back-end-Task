@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container items-center">
+      <div
+        class="
+          text-blueGray-700
+          transition
+          duration-500
+          ease-in-out
+          transform
+          bg-white
+          border
+          rounded-lg
+        "
+      >
+        <div
+          class="
+            flex flex-col flex-wrap
+            p-5
+            mx-auto
+            md:items-center
+            md:flex-row
+          "
+        >
+          <a href="/" class="pr-2 lg:pr-8 lg:px-6 focus:outline-none">
+            <div class="inline-flex items-center">
+              <div
+                class="
+                  w-2
+                  h-2
+                  p-2
+                  mr-2
+                  rounded-full
+                  bg-gradient-to-tr
+                  from-blue-500
+                  to-blue-600
+                "
+              ></div>
+              <h2
+                class="
+                  block
+                  p-2
+                  text-xl
+                  font-medium
+                  tracking-tighter
+                  text-black
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  cursor-pointer
+                  hover:text-blueGray-500
+                  lg:text-x
+                  lg:mr-8
+                "
+              >
+                wickedblocks
+              </h2>
+            </div>
+          </a>
+          <nav class="flex flex-wrap items-center text-base justify-left">
+            <ul class="items-center inline-block list-none lg:inline-flex">
+              <li>
+                <a
+                  href="#"
+                  class="
+                    px-4
+                    py-1
+                    mr-1
+                    text-base text-blueGray-500
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    rounded-md
+                    focus:shadow-outline
+                    focus:outline-none
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                    hover:text-black
+                  "
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    px-4
+                    py-1
+                    mr-1
+                    text-base text-blueGray-500
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    rounded-md
+                    focus:shadow-outline
+                    focus:outline-none
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                    hover:text-black
+                  "
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    px-4
+                    py-1
+                    mr-1
+                    text-base text-blueGray-500
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    rounded-md
+                    focus:shadow-outline
+                    focus:outline-none
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                    hover:text-black
+                  "
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    px-4
+                    py-1
+                    mr-1
+                    text-base text-blueGray-500
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    rounded-md
+                    focus:shadow-outline
+                    focus:outline-none
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                    hover:text-black
+                  "
+                  >Now</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="
+              block
+              p-2
+              mr-4
+              text-base text-blueGray-500
+              transition
+              duration-500
+              ease-in-out
+              transform
+              rounded-full
+              focus:shadow-outline
+              focus:outline-none
+              focus:ring-2
+              ring-offset-current ring-offset-2
+              lg:ml-auto
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mx-auto icon icon-tabler icon-tabler-logout"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+              ></path>
+              <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+            </svg>
+          </button>
+          <div class="relative ml-3">
+            <div>
+              <button
+                class="
+                  flex
+                  text-sm
+                  bg-blueGray-800
+                  rounded-full
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-offset-2
+                  focus:ring-offset-blueGray-800
+                  focus:ring-white
+                "
+                id="user-menu"
+                aria-haspopup="true"
+              >
+                <span class="sr-only">Open user menu</span>
+                <img
+                  class="w-8 h-8 rounded-full"
+                  src="https://d33wubrfki0l68.cloudfront.net/6d60ae66b2a50b1842d08156aeb53663fa328837/d7f97/assets/badges/mike.jpg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div
+              class="
+                absolute
+                right-0
+                hidden
+                w-48
+                px-4
+                py-2
+                mt-2
+                transition
+                duration-500
+                ease-in-out
+                origin-top-right
+                transform
+                bg-white
+                border
+                rounded-lg
+                shadow-lg
+                ring-1 ring-black ring-opacity-5
+                e
+              "
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="user-menu"
+            >
+              <a
+                href="#"
+                class="
+                  block
+                  px-4
+                  py-1
+                  my-1
+                  text-sm text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:bg-blueGray-100
+                "
+                role="menuitem"
+                >Your Profile</a
+              >
+              <a
+                href="#"
+                class="
+                  block
+                  px-4
+                  py-1
+                  my-1
+                  text-sm text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:bg-blueGray-100
+                "
+                role="menuitem"
+                >Settings</a
+              >
+              <a
+                href="#"
+                class="
+                  block
+                  px-4
+                  py-1
+                  my-1
+                  text-sm text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:bg-blueGray-100
+                "
+                role="menuitem"
+                >Sign out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            p-5
+            mt-3
+            overflow-y-auto
+            border-t
+            whitespace-nowrap
+            scroll-hidden
+          "
+        >
+          <ul class="inline-flex items-center list-none">
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Now</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Now</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Now</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="
+                  px-4
+                  py-1
+                  mr-1
+                  text-base text-blueGray-500
+                  transition
+                  duration-500
+                  ease-in-out
+                  transform
+                  rounded-md
+                  focus:shadow-outline
+                  focus:outline-none
+                  focus:ring-2
+                  ring-offset-current ring-offset-2
+                  hover:text-black
+                "
+                >Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="text-blueGray-700">
+      <div
+        class="
+          container
+          flex flex-col
+          items-start
+          px-5
+          py-16
+          mx-auto
+          lg:items-center
+          md:flex-row
+          lg:px-28
+        "
+      >
+        <div class="w-full mb-10 lg:w-5/6 lg:max-w-lg md:w-1/2">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            loading="lazy"
+            src="https://dummyimage.com/720x600/F3F4F7/8693ac"
+          />
+        </div>
+        <div
+          class="
+            flex flex-col
+            items-start
+            text-left
+            lg:flex-grow
+            md:w-1/2
+            lg:pl-24
+            md:pl-16
+          "
+        >
+          <h1
+            class="
+              mb-8
+              text-2xl
+              font-bold
+              tracking-tighter
+              text-black
+              lg:text-left lg:text-5xl
+              title-font
+            "
+          >
+            Medium length display headline.
+          </h1>
+          <p class="mb-8 text-base leading-relaxed text-left text-blueGray-700">
+            Deploy your mvp in minutes, not days. WT offers you a a wide
+            selection swapable sections for your landing page.
+          </p>
+          <div class="flex flex-col w-full gap-2 md:justify-start md:flex-row">
+            <input
+              class="
+                flex-grow
+                w-full
+                px-4
+                py-2
+                mb-4
+                text-base text-black
+                transition
+                duration-650
+                ease-in-out
+                transform
+                rounded-lg
+                lg:w-auto
+                bg-blueGray-200
+                focus:outline-none
+                focus:border-purple-500
+                sm:mb-0
+                focus:bg-white
+                focus:shadow-outline
+                focus:ring-2
+                ring-offset-current ring-offset-2
+              "
+              placeholder="Your Email"
+              type="email"
+            />
+            <button
+              class="
+                flex
+                items-center
+                px-6
+                py-2
+                mt-auto
+                font-semibold
+                text-white
+                transition
+                duration-500
+                ease-in-out
+                transform
+                bg-blue-600
+                rounded-lg
+                hover:bg-blue-700
+                focus:shadow-outline
+                focus:outline-none
+                focus:ring-2
+                ring-offset-current ring-offset-2
+              "
+            >
+              Action
+            </button>
+          </div>
+          <p class="w-full mt-2 mb-8 text-sm text-left text-blueGray-600">
+            I got 99 problems and blocks ain't one.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

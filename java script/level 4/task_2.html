@@ -1,0 +1,31 @@
+<h2>Day 17: More Exceptions complete task on hackerrank</h2>
+<br />
+<p style="font: italic 500">
+  Write a Calculator class with a single method: int power(int,int). The power
+  method takes two integers, and , as parameters and returns the integer result
+  of . If either or is negative, then the method must throw an exception with
+  the message: n and p should be non-negative.
+</p>
+
+<script>
+  //  heakerrank task to fine power of a no
+  const power = (n, p) => {
+    if (n < 1 || p < 1) {
+      console.log(" n and p should be non-negative and Zero.");
+    } else {
+      let c;
+      return (c = Math.pow(n, p));
+    }
+  };
+  console.log(power(0, 4));
+
+  const a = Symbol("prem dat");
+  const b = Symbol("prem");
+  console.log(a === b);
+
+  // find unique value in an array
+
+  let arrry = [1, 4, 5, 8, 4, 6, 6, 6, 5, 5, "a", "b", "a", "d", "b", "f"];
+  let uniqueArray = [...new Set(arrry)];
+  console.log(uniqueArray);
+</script>
