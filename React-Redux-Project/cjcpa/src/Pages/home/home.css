@@ -1,0 +1,311 @@
+/*! first section start */
+
+.home_page_bg_imges {
+  background-image: url("http://103.206.101.252:30/wp-content/themes/twentytwentyone/assets/media/bg/homebg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#home_page_first_section .inner_content {
+  height: 50rem;
+  position: relative;
+  top: 7rem;
+  bottom: 0;
+}
+
+#home_page_first_section .inner_content h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+#home_page_first_section .inner_content h2 span {
+  color: blue;
+}
+#home_page_first_section .inner_content p {
+  font-size: 2rem;
+  width: 60%;
+}
+#home_page_first_section .inner_content button {
+  color: white;
+  background-color: blue;
+  padding: 0.7rem 2.5rem;
+  border-radius: 0.7rem;
+  font-size: 1.5rem;
+}
+
+/*! first section end */
+
+/*! 2nd section start */
+.uperSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.uperSection > h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.uperSection > h4 {
+  font-size: 2rem;
+  color: blue;
+}
+
+.ourServicesCards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 17px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: 1px 1px 17px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 1px 1px 17px 0px rgba(128, 128, 128, 0.75);
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  transition: transform 0.2s;
+}
+.ourServicesCards .card:hover {
+  -ms-transform: scale(0.9); /* IE 9 */
+  -webkit-transform: scale(0.9); /* Safari 3-8 */
+  transform: scale(0.9);
+}
+.ourServicesCards .card .card_img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  margin-top: 4rem;
+}
+
+#ourServices .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ourServices .card-body .card-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#ourServices .card-body .card-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.explore-more-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #444;
+  font-weight: 300;
+  padding-right: 2rem;
+}
+
+/*! 2nd section end */
+
+/*! 3re section Start */
+
+#planInnovateExecute {
+}
+
+#planInnovateExecute .planInnovateExecuteBGImg {
+  width: 99vw;
+  height: 400px;
+  background-image: url("http://103.206.101.252:30/wp-content/themes/twentytwentyone/assets/media/bg/create-process.jpg");
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  background-size: 100% 100%;
+}
+
+.planInnovateExecuteInterContent {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  flex-direction: column;
+}
+
+.planInnovateExecuteInterContent h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.planInnovateExecuteInterContent p {
+  font-size: 1.6rem;
+}
+.planInnovateExecuteInterContent .btn {
+  padding: 0.4rem 3rem;
+  font-size: 1.5rem;
+  background-color: black;
+  color: #fff;
+  margin-left: 17rem;
+  border-radius: 2rem;
+}
+
+/*! 3re section end */
+
+/*! 4rth section Start */
+
+#whyChooseUs .row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#whyChooseUs .whyChooseUsImg {
+  height: 10.5rem;
+  width: 10.5rem;
+}
+
+#whyChooseUs .whyChooseUsImgFirstP {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: auto;
+}
+
+.whyChooseUsIcon {
+  width: 7rem;
+  height: auto;
+}
+.whyChooseUsImgSecP {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 90%;
+  text-align: end;
+}
+/*! 4rth section end */
+
+/*! 5th section Start */
+#ourExpertise {
+  background: #f6f6f6;
+}
+
+.ourExpertiseInerdiv h3 {
+  font-weight: 600;
+  margin: auto;
+}
+
+.ourExpertiseFirstImg {
+  width: 20rem;
+  height: 20.5rem;
+  box-shadow: -1px -1px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -1px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 14px 0px rgba(0, 0, 0, 0.75);
+  transition: transform 0.2s;
+}
+
+.ourExpertiseFirstImg:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.ourExpertiseButom {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ourExpertiseButom h2 {
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.ourExpertiseButom .btn {
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+/*! 5th section end */
+
+/*! 6th section stART */
+
+.ourTestimonialBgImg {
+  background-image: url("http://103.206.101.252:30/wp-content/themes/twentytwentyone/assets/media/bg/client-testimonial.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 400px;
+}
+.carouselItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.carouselItem .uperSectionP {
+  width: 50%;
+  font-size: 1.4rem;
+}
+.carouselItem h5 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+/*! 6th section end */
+
+/*! 7th section Start */
+#getInTochHome {
+  width: 100vw;
+  background-image: url("http://103.206.101.252:30/wp-content/themes/twentytwentyone/assets/media/bg/getintouch.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.uperText {
+  margin-top: 10rem;
+}
+
+.homeContactForm {
+  width: 374px;
+  height: 440px;
+  background: #fff;
+  margin-left: 3rem;
+  animation: tranform 4s linear 2s alternate;
+}
+
+@keyframes tranform {
+  0% {
+    -ms-transform: translate(0, 0); /* IE 9 */
+    transform: translate(0, 0);
+  }
+  50% {
+    -ms-transform: translate(0, 50px); /* IE 9 */
+    transform: translate(0, 50px);
+  }
+  100% {
+    -ms-transform: translate(0, 0); /* IE 9 */
+    transform: translate(0, 0);
+  }
+}
+
+.uperText p {
+  color: blue;
+  font-size: 1.6rem;
+}
+
+.uperText h2 {
+  color: #000;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.conteet_title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#form input,
+textarea {
+  margin: 1rem 0;
+  border: none;
+  background-color: aliceblue;
+  outline: none;
+  height: 5rem;
+  width: 28rem;
+}
+#form button {
+  font-size: 2rem;
+  padding: 0.6rem 2rem;
+}
+/*! 7th section end */

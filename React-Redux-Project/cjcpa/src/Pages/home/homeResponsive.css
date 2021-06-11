@@ -1,0 +1,108 @@
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 54.5%;
+    text-align: center;
+  }
+  .home_page_bg_imges {
+    background-size: 100% 80%;
+  }
+  #home_page_first_section .inner_content h2 {
+    font-size: 2rem;
+  }
+  #home_page_first_section .inner_content {
+    top: 13rem;
+  }
+  #home_page_first_section .inner_content p {
+    font-size: 1.6rem;
+    width: 100vw;
+  }
+  .ourServicesCards .card {
+    width: 90%;
+    margin: 0.5rem auto 0.5rem auto;
+  }
+
+  .uperSection > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .planInnovateExecuteInterContent h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .planInnovateExecuteInterContent .btn {
+    margin-left: 8rem;
+  }
+  .uperText h2 {
+    font-size: 2rem;
+  }
+  .homeContactForm {
+    width: 94vw;
+    margin-left: 0;
+  }
+  .ourExpertiseButom h3 {
+    text-align: center;
+  }
+  .whyChooseUsImgSecP {
+    text-align: center;
+    width: 81vw;
+    margin: 0.5rem auto 0.5rem auto;
+  }
+  .ourTestimonialBgImg {
+    height: 460px;
+  }
+}
+/*! Media Queries For general Vivo V15 ,Realme Start */
+@media only screen and (min-device-width: 360px) and (max-device-width: 780px) {
+}
+
+/*! iPhone 11,iPhone 11 Pro Max, Media Queries Start */
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+  html {
+    font-size: 60.5%;
+    text-align: center;
+  }
+}
+/*! Only for iPhone 11 Pro Media Queries Start */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+}
+
+/*! For general iPad layouts Start */
+@media only screen and (device-width: 768px) {
+  html {
+    font-size: 60.5%;
+    text-align: center;
+  }
+  #home_page_first_section .inner_content h2 {
+    font-size: 3.4rem;
+  }
+  .uperSection > h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .whyChooseUsImgSecP {
+    text-align: center;
+    width: 81vw;
+    margin: 0.5rem auto 0.5rem auto;
+    font-size: 1.8rem;
+  }
+  .uperText h2 {
+    font-size: 2.5rem;
+  }
+  #getInTochHome {
+    background-size: 100vw 92vh;
+  }
+  .homeContactForm {
+    width: 320px;
+    margin-left: 0;
+  }
+  .planInnovateExecuteInterContent h1 {
+    font-size: 2.7rem;
+  }
+  .planInnovateExecuteInterContent p {
+    font-size: 1.4rem;
+  }
+  .ourExpertiseFirstImg {
+    width: 12rem;
+    height: 15.5rem;
+  }
+}
