@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            text-align: left;
+
+        }
+
+        ul li {
+            font-size: 18px;
+            word-wrap: break-word
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">3 How many type of loops in java script?? </h1><br><br>
+    <div class="main-div">
+
+        <ul>
+            <li>while — loops through a block of code as long as the condition specified evaluates to true. <span>Syntex
+                    :
+                    while (condition) {
+                    // code block to be executed
+                    }</span></li>
+            <li> do…while — loops through a block of code once; then the condition is evaluated. If the condition is
+                true, the statement is repeated as <br> long as the specified condition is true. <span>do {
+                    // code block to be executed
+                    }
+                    while (condition);</span></li>
+            <li> for — loops through a block of code until the counter reaches a specified number <span>for (statement
+                    1; statement 2; statement 3) {
+                    // code block to be executed
+                    }</span></li>
+            <li> for…in — loops through the properties of an object -: <span>for (key in object) {
+                    // code block to be executed
+                    }</span></li>
+            <li> for…of — loops over iterable objects such as arrays, strings, etc. <span>for (variable of iterable) {
+                    // code block to be executed
+                    }</span></li>
+            <li>The forEach() method calls a function once for each element in an array, in order.
+                <span>forEach((element, index, array) => { ... } )</span>
+            </li>
+        </ul>
+
+        <h3>map() method</h3>
+        <h5>The map() method creates a new array populated with the results of calling a provided function on every
+            element in the calling array.
+            <span>map((element, index, array) => { ... } )</span>
+        </h5>
+
+        <img src="../../images/JavascripTaskImage/Loops_in_js.png" alt="">
+    </div>
+
+    <script>
+        // while loop 
+        let data = 1
+        while (data < 10) {
+            console.log(data); data++
+        }
+        let data2 = 1
+        // do while loop
+        do { console.log(data2); data2++; } while (data2 < 10)
+
+        // for loop 
+
+        for (data3 = 1; data3 < 10; data3++) {
+            console.log(data3);
+        }
+        //  for in loop 
+        let valu = ["a", 1, "f", "dataa", 3, 34, 5]
+        for (indx_no in valu) {
+            console.log(indx_no);
+        }
+        //  for in loop 
+
+        for (values of valu) {
+            console.log(values);
+        }
+        // forEach loop 
+        valu.forEach(element => {
+            console.log(element);
+        });
+        //  map fuction 
+        valu.map((elemnt) => {
+            console.log(elemnt);
+        })
+
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

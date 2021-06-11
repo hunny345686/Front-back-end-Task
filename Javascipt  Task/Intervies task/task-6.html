@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 80vw;
+            height: 100vh;
+            margin-left: 50px;
+            margin-bottom: 40px;
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">3 What is function currying in JS? </h1><br><br>
+    <div class="main-div">
+
+        <h2 class="text-center"> <span>Currying is a technique of evaluating function with multiple arguments, into
+                sequence of functions with single argument.In other words, when a function, instead of taking all
+                arguments at one time, takes the first one and return a new function that takes the second one and
+                returns a new function which takes the third one, and so forth, until all arguments have been
+                fulfilled</span></h2>
+
+        <h3>How to Solve this:- sum(2)(4)(5)(7)</h3>
+
+        <img src="../../images/JavascripTaskImage/fuction_curring.png" alt="fuction_curring">
+
+    </div>
+
+    <script>
+
+        const sum = (a) => {
+            console.log(a);
+            return (b) => {
+                console.log(b);
+                return (c) => {
+                    console.log(c);
+                    return (d) => {
+                        console.log(d);
+                        console.log(a + b + c + d);
+                    }
+                }
+            }
+        }
+
+
+        sum(2)(4)(5)(7)
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

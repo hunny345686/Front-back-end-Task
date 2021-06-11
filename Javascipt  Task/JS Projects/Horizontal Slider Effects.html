@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Project 1</title>
+
+    <style>
+        .main-div {
+            width: 100vw;
+            height: 80vh;
+            display: grid;
+            place-items: center;
+            background-color: rgb(216, 231, 202);
+        }
+
+        #centerdiv {
+            width: 100%;
+            display: flex;
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+
+        img {
+            padding: 1.3rem;
+            border-radius: 1.2rem;
+            transition: transform 0.3s linear;
+        }
+
+        h2 {
+            color: crimson;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* #centerdiv::-webkit-scrollbar {
+            overflow: hidden;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center"> Responsive Netflix Website Horizontal Slider Effects using API, HTML, CSS, & JavaScript
+    </h2>
+    <div class="container main-div">
+        <div class="centerdiv" id="centerdiv"></div>
+    </div>
+
+    <script>
+
+        const centerdiv = document.getElementById('centerdiv');
+
+
+        // col to API 
+        fetch("https://jsonplaceholder.typicode.com/photos?_limit=30").then((res) => {
+            return res.json();            //get data in json formet
+        }).then((data) => {               // now get data in array of an obj formet
+            data.map((value) => {         //  get vall values of array of obj
+                key = value.id;
+                let img = document.createElement('img');
+                img.src = `https://picsum.photos/200/300?random=${value.id}` //col second api
+                centerdiv.appendChild(img);
+                // console.log(value.url);
+            });
+        });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

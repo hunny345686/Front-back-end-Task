@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">13 Difference Between Callback Function VS Higher-Order Functions in JavaScript ?
+    </h1><br><br>
+
+
+    <div class="main-div container">
+        <h3><span>A higher-order function is a function that takes another function(s) as an argument(s) and/or returns
+                a
+                function to its callers.</span></h3>
+        <h3><span>A callback function is a function that is passed to another function with the expectation that the
+                other
+                function will call it.</span></h3>
+
+        <img src="../../images/JavascripTaskImage/ColBack_&_HOF.png" alt="ColBack_&_HOF">
+    </div>
+
+
+
+    <script>
+        // adition data 
+        const sum = (a, b) => {
+            return a + b;
+        }
+        const subs = (a, b) => {
+            return a - b;
+        }
+        // higher order function
+        const HighrOrderFuc = (a, b, colBackfunction) => {
+            return colBackfunction(a, b)
+        }
+
+        console.log(HighrOrderFuc(3, 4, sum));
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

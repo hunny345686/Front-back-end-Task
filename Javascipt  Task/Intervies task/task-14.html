@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+
+        #a {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+        }
+
+        #b {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+        }
+
+        #c {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">13 What is Event Propagation Bubbling and capturing in JavaScript ?
+    </h1><br><br>
+
+    <div class="main-div container">
+        <h2>Event Bubbling − <span>Whenever an event happens on an element, the event handlers will first run on it and
+                then on its parent and finally all the way up to its other ancestors.</span></h2>
+
+        <h2>Event Capturing- <span>It is the reverse of the event bubbling and here the event starts from the parent
+                element and then to its child element.</span></h2>
+
+        <div id="a">parent
+            <div id="b">child
+                <div id="c">
+                    grand child
+                </div>
+            </div>
+        </div>
+
+        <img src="../../images/JavascripTaskImage/event_bubling&capturing.png" alt="ColBack_&_HOF">
+    </div>
+
+
+
+    <script>
+
+        let a = document.getElementById('a');
+        let b = document.getElementById('b')
+        let c = document.getElementById('c')
+
+        // this is event bubbling iner to outer & this is by defualt mode 
+
+        a.addEventListener('click', () => {
+            alert('parent');
+        })
+        b.addEventListener('click', () => {
+            alert('child');
+        })
+        c.addEventListener('click', () => {
+            alert('grand child');
+        })
+
+        // this is event capturing the last argumnt will be true 
+        a.addEventListener('click', () => {
+            alert('parent');
+        }, true)
+        b.addEventListener('click', () => {
+            alert('child');
+        }, true)
+        c.addEventListener('click', () => {
+            alert('grand child');
+        }, true)
+
+
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

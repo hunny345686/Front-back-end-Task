@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">13 what is Array Reduce Method in JavaScript with example ?
+    </h1><br><br>
+
+
+    <div class="main-div container">
+
+        <h2>Array Reduce Method :- <span>The reduce() method executes a reducer function (that you provide) on each
+                element
+                of the array, resulting in a single output value.</span></h2>
+        <h4> <span>Note: reduce() does not execute the function for array elements without values.<br> Note: This method
+                does not change the original array.</span></h4>
+
+        <h2>Syntex:- <span>reduce((accumulator, currentValue) => { ... } )</span></h2>
+
+        <img src="../../images/JavascripTaskImage/reduce_method.png" alt="reduce_method">
+
+    </div>
+
+    <script>
+        // reduce method add all valuse
+        let array = [1, 4, 6, 8, 9, 4, 5, 6]
+        let result = array.reduce((acumulator, index) => {
+            return acumulator + index
+
+        });
+        console.log(result);
+
+        // avg in reduse method
+
+        let result = array.reduce((acum, indx) => {
+            return acum + indx;
+        })
+        console.log(result);
+        // console.log(array.length);
+        console.log(result / array.length);
+
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

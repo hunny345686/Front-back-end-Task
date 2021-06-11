@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Css Task</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: red;
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">01.JS Interview #1 Use Only One Method to Insert, Remove, Update, Delete, Replace Elements
+        in Array ? </h1><br><br>
+    <div class="main-div">
+        <h3>Definition and Usage:-
+            The splice() method adds/removes items to/from an array, and returns the removed item(s) <br> <b>Note:-</b>
+            This
+            method changes the original array
+        </h3>
+        <h4>Syntex:- array.splice(index, howmany, item1, ....., itemX)
+        </h4>
+        <p><b>index Required.</b> An integer that specifies at what position to add/remove items, Use negative values to
+            specify the position from the end of the array <br>
+            <b>howmany Optional.</b> The number of items to be removed. If set to 0, no items will be removed <br>
+            <b> item1, ..., itemX Optional.</b> The new item(s) to be added to the array
+        </p>
+        <h1>Now Opne Console and see the example</h1>
+
+        <img src="./CodeImages/ArrayCURDbY_Splice.png" alt="ArrayCURDbY_Splice">
+    </div>
+
+    <script>
+        let array_elements = ["one", "two", "three", "four", "five"];
+
+        // add new value in array --------------------------
+
+        let array_elements_after_add = array_elements.splice(0, 0, "first_one");
+        // console.log(array_elements);
+        // console.log(array_elements_after_add);
+
+        // updating a valu in array -------------------------
+
+        let array_elements_after_update = array_elements.splice(2, 1, "two_updated")
+        // console.log(array_elements);
+        // console.log(array_elements_after_update);
+
+        // delete vale from array--------------------
+
+        let array_elements_after_delete = array_elements.splice(0, 1,)
+        // console.log(array_elements);
+        // console.log(array_elements_after_delete);
+
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

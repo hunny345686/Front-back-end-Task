@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Css Loader</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(241, 180, 180);
+        }
+
+        .centerDiv {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            transform: rotate(45deg);
+            box-shadow: 0px 11px 25px red;
+            animation: beat 1s linear infinite;
+        }
+
+
+        .centerDiv::before {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .centerDiv::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes beat {
+            0% {
+                transform: rotate(45deg) scale(1)
+            }
+
+            20% {
+                transform: rotate(45deg) scale(1)
+            }
+
+            40% {
+                transform: rotate(45deg) scale(1.4)
+            }
+
+            60% {
+                transform: rotate(45deg) scale(1.2)
+            }
+
+            80% {
+                transform: rotate(45deg) scale(1.4)
+            }
+
+            100% {
+                transform: rotate(45deg) scale(1)
+            }
+        }
+
+        /* // The bits you want to see */
+        .beat-loader {
+            stroke: #E76E66;
+            stroke-dasharray: 175;
+            stroke-dashoffset: 350;
+            animation: draw 1.4s linear infinite;
+        }
+
+
+        /* 
+        // The animation */
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center">How to Make heart and heartBeat using css and animation</h2>
+    <div class="main_div">
+
+        <svg width="108px" height="128px" viewBox="0 0 54 64" version="1.1">>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <path class="beat-loader"
+                    d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2"
+                    stroke-width="2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </svg>
+
+        <div class="centerDiv">
+
+        </div>
+
+        <svg width="108px" height="128px" viewBox="0 0 54 64" version="1.1">>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <path class="beat-loader"
+                    d="M0.5,38.5 L16,38.5 L19,25.5 L24.5,57.5 L31.5,7.5 L37.5,46.5 L43,38.5 L53.5,38.5" id="Path-2"
+                    stroke-width="2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </svg>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">13 what is JavaScript Timing base Events and explain ?
+    </h1><br><br>
+
+
+    <div class="main-div container">
+
+        <h3>The window object allows execution of code at specified time intervals. These time intervals are called
+            timing
+            events</h3>
+
+        <h2>The two key methods to use with JavaScript are:</h2>
+        <h3><span>setTimeout(function, milliseconds)
+            </span>Executes a function, after waiting a specified number of milliseconds.</h3>
+        <h3><span>setInterval(function, milliseconds)</span>Same as setTimeout(), but repeats the execution of the
+            function
+            continuously.</h3>
+
+        <h3>The clearTimeout() method stops the execution of the function specified in setTimeout().
+            <span> syntex clearTimeout(timeoutVariable)</span>
+        </h3>
+        <h3>The clearInterval() method stops the executions of the function specified in the setInterval() method.
+            <span>clearInterval(timerVariable)</span>
+        </h3>
+        <img src="../../images/JavascripTaskImage/Timing Events.png" alt="Timing Events">
+
+    </div>
+
+    <script>
+        // settimeout example to increment no
+        // in this settimeout increse 1 no and sgow after 2sec
+        var timeout = setTimeout(() => {
+            let no = 0;
+            no++;
+            console.log(no);
+            // alert(`this no ${no} is open after 2 sec`);
+        }, 2000)
+
+        // to stop set timeout 
+        clearTimeout(timeout)
+
+        // setintervel example 
+        // this will trgigrd in evry 1 sec
+        let no1 = 0;
+        let intrvel = setInterval(() => {
+            no1++;
+            // console.log(no1);
+        }, 1000);
+
+        // to sptop setintervel 
+        clearInterval(intrvel);
+
+
+
+
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

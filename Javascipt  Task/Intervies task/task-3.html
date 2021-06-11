@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Css Task</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: red;
+        }
+
+        .main-div {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">3 what is NULL & UNDEFINED in JavaScript </h1><br><br>
+    <div class="main-div">
+        <h5>Null - Whereas, null in JavaScript is an assignment value. You can assign it to a variable. ex- var data =
+            null;</h5>
+        <h5>undefined: It means a variable declared, but no value has been assigned a value.ex- var data; (but not
+            assign any value)</h5>
+
+        <p> null == undefined it will return true</p>
+        <p> null === undefined it will return false</p>
+
+        <img src="../../images/JavascripTaskImage/null_VS_Undefined.png" alt="">
+    </div>
+
+    <script>
+        let data;
+        console.log(data); // undefined
+        console.log(typeof (data));// undefined
+        let data1 = null;
+        console.log(data1);// null
+        console.log(typeof (data1));// object
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

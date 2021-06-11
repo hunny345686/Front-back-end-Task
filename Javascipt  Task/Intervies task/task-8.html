@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 80vw;
+            height: 100vh;
+            margin-left: 50px;
+            margin-bottom: 40px;
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">10_ How to Disabled Copy Paste and right click Functionality on Website with JavaScript ?
+    </h1><br><br>
+    <div class="main-div">
+
+        <h3> using HTML you can disable copy cut paste and right click like:-
+
+            <span class="text-danger"> body oncopy="return false" oncut="return false" onpaste="return false"
+                oncontextmenu="return false"</span>
+        </h3>
+
+        <h5>Right Click Disable using js :- <span class="text-danger"> document.oncontextmenu =
+                document.body.oncontextmenu = function () { return false }</span>
+        </h5>
+
+
+        <a
+            href="https://www.codingbot.net/2017/03/disable-copy-paste-mouse-right-click-using-javascript-jquery-css.html#:~:text=Disable%20Copy%20Paste%20Using%20JavaScript%3A&text=document.,%22%20return%20false%20%22)">
+            Visit to see How To disable copy paste and right click Using Jquery,JS</a>
+    </div>
+
+    <script>
+        document.oncontextmenu = document.body.oncontextmenu = function () { return false }
+
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

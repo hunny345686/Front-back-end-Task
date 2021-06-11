@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 98%;
+            height: auto;
+            margin-left: 1rem;
+            word-wrap: normal;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        h3 {
+            color: green;
+        }
+
+        p {
+            color: red;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>JavaScript Coding Conventions</h2>
+        <p>Naming and declaration rules for variables and functions</p>
+        <p>Programming practices and principles</p>
+        <p>Improves code readability</p>
+        <p>Make code maintenance easier</p>
+        <p>Rules for the use of white space, indentation, and comments.</p>
+
+        <h2>JavaScript Best Practices</h2>
+        <p>Avoid global variables, avoid new, avoid ==, avoid eval()</p>
+        <p>It is a good coding practice to put all declarations at the top of each script or function</p>
+        <p>It is a good coding practice to initialize variables when you declare them.</p>
+        <p>Always treat numbers, strings, or booleans as primitive values. Not as objects</p>
+        <p>Beware that numbers can accidentally be converted to strings or NaN (Not a Number).</p>
+        <p>Always end your switch statements with a default. Even if you think there is no need for it.</p>
+        <p>The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it.
+            Because it allows arbitrary code to be run, it also represents a security problem.</p>
+        <p>The === operator forces comparison of values and type:</p>
+        <h3>Don't Use new Object()</h3>
+        <p>Use {} instead of new Object()</p>
+        <p>Use "" instead of new String()</p>
+        <p>Use 0 instead of new Number()</p>
+        <p>Use false instead of new Boolean()</p>
+        <p>Use [] instead of new Array()</p>
+        <p>Use /()/ instead of new RegExp()</p>
+        <p>Use function (){} instead of new Function()</p>
+
+        <h2>JavaScript Common Mistakes</h2>
+        <p>JavaScript programs may generate unexpected results if a programmer accidentally uses an assignment operator
+            (=), instead of a comparison operator (==) in an if statement.</p>
+        <p>adding a number as a number will produce a different result from adding a number as a string:</p>
+
+        <h2>JavaScript Performance</h2>
+        <p>Loops are often used in programming.Each statement in a loop, including the for statement, is executed for
+            each iteration of the loop.Statements or assignments that can be placed outside the loop will make the loop
+            run faster.</p>
+        <p>Accessing the HTML DOM is very slow, compared to other JavaScript statements.If you expect to access a DOM
+            element several times, access it once, and use it as a local variable:</p>
+        <p>Don't create new variables if you don't plan to save values.</p>
+        <p>Putting your scripts at the bottom of the page body lets the browser load the page first.</p>
+        <p>An alternative is to use defer="true" in the script tag. The defer attribute specifies that the script should
+            be executed after the page has finished parsing, but it only works for external scripts.
+
+            If possible, you can add your script to the page by code, after the page has loaded:</p>
+        <p>
+            window.onload = function () {
+            var element = document.createElement("script");
+            element.src = "myScript.js";
+            document.body.appendChild(element);
+            };
+
+        </p>
+        <p>Avoid using the with keyword. It has a negative effect on speed. It also clutters up JavaScript scopes.
+
+            The with keyword is not allowed in strict mode.</p>
+    </div>
+</body>
+
+</html>

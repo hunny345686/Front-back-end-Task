@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Task list</title>
+    <style>
+        body {
+            background-color: #e0acbe;
+            font-size: 100%;
+            color: black;
+        }
+
+        .main-div {
+            width: 80vw;
+            height: 100vh;
+            margin-left: 50px;
+            margin-bottom: 40px;
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">3 What is the uses of use strict mode in JS? </h1><br><br>
+    <div class="main-div">
+
+        <h2>Not Allowed in Strict Mode</h2>
+
+        <ul>
+
+            <li>Using a variable, without declaring it, is not allowed ex- <span>"use strict";
+                    x = 3.14; </span></li>
+            <li>Using an object, without declaring it, is not allowed ex- <span>"use strict";
+                    x = {p1:10, p2:20};</span></li>
+            <li>Deleting a variable (or object) is not allowed.
+
+                <span>"use strict";
+                    var x = 3.14;
+                    delete x; </span>
+            <li>Duplicating a parameter name is not allowed <span>"use strict";
+                    function x(p1, p1) {};</span></li>
+            <li>Octal numeric literals are not allowed <span>"use strict";
+                    var x = 010; </span></li>
+            </li>
+        </ul>
+
+        <h2>HTML input type=“number” still returning a string when accessed from javascript???</h2>
+        <h3><span>It's normal you get a string.
+
+                The purpose of the number type is that mobile <br> browsers use this for showing the right keyboards and
+                some
+
+                browsers use this for validation purposes. <br> For example the email type will show a keyboard <br>with
+                the @
+                and
+                '.' on the keyboard and number will <br>show a numeric keyboard.</span></h3>
+
+        <h4><strong> var n1 = document.getElementById("num1").valueAsNumber;</strong></h4>
+        <h4><strong> you can use parseInt()</strong></h4>
+        <h4><strong>and you can use plus(+) sign in front of that variable</strong></h4>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
