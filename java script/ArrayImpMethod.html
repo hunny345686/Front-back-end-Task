@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <h1>Array find() Method</h1>
+    <p>This find()method makes the return of the first found element towards the array, that is tested with the provided
+        functions. In case the element is discovered it then returns undefined</p>
+
+    <h1>Array concat() Method</h1>
+    <p>You can join two or more arrays</p>
+
+    <h1>Array findIndex() method</h1>
+    <p>This findIndex()method actually returns this index of first found elements in this array, it is then tested with
+        provided functions. In case the index is undiscovered then it returns the -1.
+    </p>
+
+    <h1>Array forEach() Method</h1>
+    <p>In case of the forEach()method the user uses the function on every element of the array.</p>
+    <h1>join()</h1>
+    <p>Assemble the elements of an array into a chain with a separator - optional.</p>
+    <script>
+
+        // first example of find
+        let array = [1, 3, 4, 5, 6, 7, 7, 8];
+        // console.log(array.find((e) => {
+        //     return e == 3
+        // }))
+        // 2nd example of find
+
+        let array2 = [
+            {
+                name: "prem",
+                age: 28,
+
+            },
+            {
+                education: "BA"
+            }
+
+        ];
+        // console.log(array2.find((e) => {
+        //     return e.education === "BA"
+        // }));
+
+        //  concat method example 
+        let concataArray1 = [1, 3, 4, 5, 6, 7, 7, 8];
+        let concataArray2 = ["a", "b", "c", "d", "e", "f"];
+        //   console.log(concataArray1.concat(concataArray2).concat(concataArray1))
+
+        // findIndex Example 
+        let findIndexArray = [1, 3, 4, 5, 6, 7, 7, 8];
+        console.log(findIndexArray.indexOf(10));
+
+        // forEach example
+        findIndexArray.forEach(e => {
+            console.log(e);
+        })
+
+        // join method example
+        console.log(findIndexArray.join())
+
+
+
+
+    </script>
+</body>
+
+</html>

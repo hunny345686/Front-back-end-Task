@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ring</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00796b
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .outerRing {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* background: gray; */
+            border-top: 6px solid rgb(207, 205, 205);
+            border-bottom: 6px solid rgb(207, 205, 205);
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            position: absolute;
+
+        }
+
+        .middelRing {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            /* background: gray; */
+            border-top: 6px solid rgb(207, 205, 205);
+            border-bottom: 6px solid rgb(207, 205, 205);
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            position: absolute;
+
+        }
+
+        .innerRing {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* background: gray; */
+            border-top: 6px solid rgb(207, 205, 205);
+            border-bottom: 6px solid rgb(207, 205, 205);
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            position: absolute;
+
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="outerRing">
+            <div class="middelRing">
+                <div class="innerRing">
+                    <div class="circle">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
